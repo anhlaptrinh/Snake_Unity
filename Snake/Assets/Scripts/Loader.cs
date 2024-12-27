@@ -10,6 +10,7 @@ public static class Loader
     {
         GameScene,
         Loading,
+        MainMenu
     }
     private static Action loaderCallbackAction;
     public static void Load(Scene scene)

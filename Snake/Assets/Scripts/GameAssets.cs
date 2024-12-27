@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameAssets : MonoBehaviour
 {
@@ -13,4 +14,12 @@ public class GameAssets : MonoBehaviour
     public Sprite snakeHeadSprite;
     public Sprite foodSprite;
     public Sprite snakeBodySprite;
+    public SoundAudioClip[] soundAudioClipArray;
+
+    [Serializable]
+    public class SoundAudioClip
+    {
+        public SoundManager.Sound sound;
+        public AudioClip audioClip;
+    }
 }
